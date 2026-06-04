@@ -1,5 +1,5 @@
-import { BrowserRouter, Routes, Route }
-from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
@@ -8,7 +8,7 @@ import CreateRequest from "./pages/CreateRequest";
 import AssignRequest from "./pages/AssignRequest";
 
 function App() {
-
+  console.log("API URL:", import.meta.env.VITE_API_URL);
   return (
 
     <BrowserRouter>
