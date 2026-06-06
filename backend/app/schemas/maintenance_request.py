@@ -14,8 +14,6 @@ class RequestCreate(BaseModel):
     priority: Priority
     user_id: int
 
-
-
 class RequestResponse(BaseModel):
     id: int
     title: str
@@ -32,3 +30,11 @@ class RequestResponse(BaseModel):
     model_config = ConfigDict(
         from_attributes=True
     )
+
+class TechnicianAssignment(BaseModel):
+    technician_id: int
+
+class DashboardStats(BaseModel):
+    open: int
+    in_progress: int
+    completed: int

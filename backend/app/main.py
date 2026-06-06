@@ -17,8 +17,8 @@ app.include_router(requests.router)
 
 app.add_middleware(CORSMiddleware,
                    allow_origins=["http://localhost:3000",
-                                  "http://localhost:5173",
-                                    "http://3.111.42.33"],
+                                  "http://localhost:5173"],
+                                    # "http://3.111.42.33"],  -- APp url shud come here
                    allow_credentials=True,
                    allow_methods=["*"],
                    allow_headers=["*"],
